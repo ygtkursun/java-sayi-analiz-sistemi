@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Java Sayi Analiz Sistemi"/>
+        <attribute name="authors" value="Yi&#287;it Kur&#351;un"/>
+        <attribute name="about" value="Java sayi analiz programinin Flowgorithm algoritmasi"/>
+        <attribute name="saved" value="2026-11-16 11:08:48 &#214;S"/>
+        <attribute name="created" value="eWd0a3U7WUnEnklUS1VSxZ5VTjsyMDI2LTExLTE2OzExOjA2OjA1IMOWUzszMzQw"/>
+        <attribute name="edited" value="eWd0a3U7WUnEnklUS1VSxZ5VTjsyMDI2LTExLTE2OzExOjA4OjQ4IMOWUzsxOzM0NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="pozitif" type="Integer" array="False" size=""/>
+            <declare name="negatif" type="Integer" array="False" size=""/>
+            <declare name="tek" type="Integer" array="False" size=""/>
+            <declare name="cift" type="Integer" array="False" size=""/>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <declare name="toplam" type="Integer" array="False" size=""/>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <declare name="buyuk" type="Integer" array="False" size=""/>
+            <declare name="kucuk" type="Integer" array="False" size=""/>
+            <declare name="asal" type="Boolean" array="False" size=""/>
+            <declare name="mukemmel" type="Boolean" array="False" size=""/>
+            <declare name="bolen" type="Integer" array="False" size=""/>
+            <declare name="bolenToplam" type="Integer" array="False" size=""/>
+            <declare name="basamak" type="Integer" array="False" size=""/>
+            <declare name="geciciSayi" type="Integer" array="False" size=""/>
+            <assign variable="pozitif" expression="0"/>
+            <assign variable="negatif" expression="0"/>
+            <assign variable="tek" expression="0"/>
+            <assign variable="cift" expression="0"/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="ortalama" expression="0"/>
+            <output expression="&quot;Bir sayi girin: &quot;" newline="True"/>
+            <input variable="number"/>
+            <while expression="number != 0"/>
+            <output expression="&quot;Cikis yapildi.&quot;" newline="True"/>
+            <if expression="sayi &gt; 0">
+                <then>
+                    <assign variable="ortalama" expression="(toplam * 1.0) / sayi"/>
+                    <output expression="&quot;Pozitif sayi adedi: &quot; &amp; pozitif" newline="True"/>
+                    <output expression="&quot;Negatif sayi adedi: &quot; &amp; negatif" newline="True"/>
+                    <output expression="&quot;Tek sayi adedi: &quot; &amp; tek" newline="True"/>
+                    <output expression="&quot;Cift sayi adedi: &quot; &amp; cift" newline="True"/>
+                    <output expression="&quot;Girilen sayi adedi: &quot; &amp; sayi" newline="True"/>
+                    <output expression="&quot;Sayilarin toplam degeri: &quot; &amp; toplam" newline="True"/>
+                    <output expression="&quot;Ortalama: &quot; &amp; ortalama" newline="True"/>
+                    <output expression="&quot;En buyuk sayi: &quot; &amp; buyuk" newline="True"/>
+                    <output expression="&quot;En kucuk sayi: &quot; &amp; kucuk" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
